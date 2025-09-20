@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+      <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: #35424a;
+      color: white;
+      padding: 10px 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      margin: 0;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    nav a,
+    .dropdown {
+      margin: 10px;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 8px 12px;
+    }
+
+    nav a:hover,
+    .dropdown:hover > a {
+      background-color: #45a049;
+      border-radius: 4px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .dropdown a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #35424a;
+      min-width: 180px;
+      z-index: 1;
+      text-align: left;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    button {
+      padding: 10px 15px;
+      background: #35424a;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    .main-image {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .main-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    #contacto {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: #35424a;
+      color: #ffffff;
+      margin-top: 40px;
+    }
+
+    .social-icons {
+      margin: 10px 0;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #45a049;
+    }
+
+    #portafolio div {
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .dropdown-content {
+        position: static;
+      }
+    }
+  </style>    
+</head>
+<body>
+    
+
+<header>
+    
+      <h1>Servicios en Sistemas</h1>
+      
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="Nosotros.html">Quienes Somos</a>
+        <a href="Portafolio.html">Portafolio</a>
+        <a href="Contacto.html">Contacto</a>
+        
+        </nav>
+    
+    </header>
+
+    <form>
+
+        <h2>Contacto</h2>
+        <div class="Input-group">
+            <Label for ="name"> Nombre </Label>
+            <input type="text" name = "name" id="name" placeholder="Nombre ">
+            <Label for ="Phone"> Telefono </Label>
+            <input type="tel" name = "Phone" id="Phone" placeholder="Telefono ">
+            <Label for ="Email"> Correo </Label>
+            <input type="email" name = "email" id="email" placeholder="Correo ">
+            <Label for ="message"> Mensaje </Label>
+            <textarea type="message" name = "message" cols="30"  rows= "5" placeholder="Mensaje "></textarea>
+            <div class="form-txt">
+              <a href="a">politica de privacidad</a>
+              <a href="a">Terminos y condiciones </a>
+            </div>
+            <input class="btn" type="submit" value="Enviar">
+        </div>
+    </form>
+
+
+</body>
+</html>
